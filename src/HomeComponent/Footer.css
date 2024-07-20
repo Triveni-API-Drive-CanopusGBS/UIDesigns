@@ -1,0 +1,8 @@
+/* src/components/Footer.css */
+.footer {
+    margin-left: 100px;
+    padding: 5px;
+    /* background-color: #ffcc00; */
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
