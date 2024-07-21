@@ -1,0 +1,28 @@
+/* In your CSS file or within a <style> tag in your component file */
+.table td, .table th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; /* Adjust the width as needed */
+  }
+  
+  .table td {
+    max-width: 150px;
+  }
+  
+  .table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  .container1 {
+    max-width: 100%;
+  }
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form-check-inline {
+    flex: 0 0 33.33%;
+  }

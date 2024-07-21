@@ -21,7 +21,7 @@ a {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .container {

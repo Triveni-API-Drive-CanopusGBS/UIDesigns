@@ -1,5 +1,6 @@
 /* src/components/MainContent.css */
 .main-content {
+    display: block;
     flex: 1;
     padding: 5px;
     border: 1px solid #ccc;
@@ -7,6 +8,6 @@
     margin: 10px 10px 10px 10px;
     transition: border-radius 0.3s;
     border-radius: 15px;
-    height: 500px;
+    /* height: 500px; */
 }
 

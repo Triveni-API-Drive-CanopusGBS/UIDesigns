@@ -32,8 +32,7 @@
     padding:10px 10px;
     cursor: pointer;
     border-radius: 8px;
-    background-color: #dbd9d9;
-    color: #fff;
+    background-color: #e3e3e3;
 }
 .submenu ul li.active{
     padding:10px 10px;

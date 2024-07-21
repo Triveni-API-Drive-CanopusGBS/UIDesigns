@@ -1,0 +1,89 @@
+/* src/components/Header.css */
+
+/* Header container styling */
+.header {
+  background-color: #ffcc00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Logo styling */
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation container styling */
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation link styling */
+.header nav .nav-link {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+/* Navigation link hover effect */
+.header nav .nav-link:hover {
+  background-color: rgba(148, 97, 1, 0.575);
+  color: white;
+}
+
+/* Dropdown container styling */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown button styling */
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(148, 97, 1, 0.1);
+}
