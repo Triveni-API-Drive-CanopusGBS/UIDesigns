@@ -2,19 +2,22 @@
 
 /* Header container styling */
 .header {
-  background-color: #ffcc00;
+  background-color: orange;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  height:100%;
   border-radius: 8px 8px 0 0;
 }
 
-/* Logo styling */
-.header .logo {
-  font-size: 24px;
-  font-weight: bold;
+.logo {
+  width: 115px !important; /* Adjust the size as needed */
+  height: auto !important;
+  object-fit: contain !important;
 }
+
+/* Logo styling */
+
 
 /* Navigation container styling */
 .header nav {
@@ -29,16 +32,17 @@
   text-decoration: none;
   color: black;
   font-size: 12px;
-  /* padding: 10px;
-  border-radius: 8px; */
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 20px;
   transition: background-color 0.3s, border-radius 0.3s;
 }
 
 /* Navigation link hover effect */
-/* .header nav .nav-link:hover {
-  background-color: rgba(148, 97, 1, 0.575);
+.header nav .nav-link:hover{
+  /* background-color: rgba(148, 97, 1, 0.575); */
   color: white;
-} */
+}
 
 /* Dropdown container styling */
 .dropdown {
@@ -60,15 +64,13 @@
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  /* left: 0; */
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 200px;
+  width: auto;
 }
 
 /* Show dropdown menu on hover */
@@ -87,3 +89,37 @@
 .dropdown-item:hover {
   background-color: rgba(148, 97, 1, 0.1);
 }
+
+.header {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-title {
+  font-size: 1.5rem; /* Increase the font size */
+  margin-left: 20px; /* Add gap between the image and the text */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Customize the color as needed */
+}
+a{
+    display: block;
+    padding: 0 !important;
+    text-decoration: none;
+    color: #000;
+    /* margin: 5px 0; */
+    padding: 10px 5px;
+    cursor: pointer;
+    border:1px solid orange;
+  
+}
+.main{
+  height:500px;
+}
+
+
