@@ -18,6 +18,9 @@
   /* height: 65px; Set a fixed height for the header */
 }
 
+.header .logo h1{
+  margin-bottom: 0;
+}
 /* Logo styling */
 .logo {
   display: flex;
