@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Sidebar from "../CSSFiles/Home/Sidebar";
 import SubMenu from "../CSSFiles/Home/SubMenu";
@@ -15,7 +15,7 @@ const CreateQuote =() =>{
 
   return (
   <div className="App">
-  <div className="container">
+  <div >
     <Sidebar onSelect={setSelectedSidebarItem} />
     <div className="main-section">
       <SubMenu

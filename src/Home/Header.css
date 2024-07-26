@@ -1,44 +1,56 @@
 /* src/components/Header.css */
 
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Header container styling */
 .header {
-  background-color: #ffcc00;
+  background-color: orange;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  /* padding: 0 20px; */
   border-radius: 8px 8px 0 0;
+  /* height: 65px; Set a fixed height for the header */
 }
 
 /* Logo styling */
-.header .logo {
-  font-size: 24px;
-  font-weight: bold;
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100%;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.logo h1 {
+  font-size: 14px;
+  margin-left: 20px; /* Add margin to the left of the title */
+  white-space: nowrap; /* Prevent line breaks in the title */
 }
 
 /* Navigation container styling */
-.header nav {
+nav {
   display: flex;
   align-items: center;
 }
 
 /* Navigation link styling */
-.header nav .nav-link {
-  display: inline-block;
+.nav-link {
   margin-left: 20px;
   text-decoration: none;
   color: black;
   font-size: 12px;
-  /* padding: 10px;
-  border-radius: 8px; */
   transition: background-color 0.3s, border-radius 0.3s;
 }
-
-/* Navigation link hover effect */
-/* .header nav .nav-link:hover {
-  background-color: rgba(148, 97, 1, 0.575);
-  color: white;
-} */
 
 /* Dropdown container styling */
 .dropdown {
