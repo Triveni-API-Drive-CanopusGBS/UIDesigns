@@ -19,7 +19,7 @@ const App = () => {
         <Header />
         <div >
 
-          <div className="main-content">
+          <div className="main-content container-fluid">
               <Routes>
                 <Route exact path="/" Component={Home} />
                 <Route path="/profile" Component={ProfileData} />
