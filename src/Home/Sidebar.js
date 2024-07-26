@@ -1,4 +1,3 @@
-// src/components/Sidebar.js
 import React, { useState } from 'react';
 import './Sidebar.css';
 
@@ -37,6 +36,14 @@ function Sidebar({ onSelect }) {
                         onClick={() => handleClick(index, item)}
                     >
                         {item}
+                        {index === 2 && (
+                            <ul 
+                            key={index} 
+                            className={activeIndex === index ? 'active hover-links' : ''} >
+                                <li onClick={() => handleClick(index, item)}>Electrical</li>
+                                <li onClick={() => handleClick(index, item)}>Mechanical</li>
+                            </ul>
+                        )}
                     </li>
                 ))}
             </ul>

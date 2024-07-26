@@ -28,13 +28,14 @@
     padding: 10px;
     cursor: pointer;
     border-radius: 8px;
+    position: relative;  /* Needed for positioning hover-links */
 }
 
-.sidebar ul li:hover{
-    background-color:#e3e3e3;
+.sidebar ul li:hover {
+    background-color: #e3e3e3;
 }
 
-.sidebar ul li.active,.sidebar ol li.active {
+.sidebar ul li.active, .sidebar ol li.active {
     background-color: #fff !important;
     color: orange;
 }
@@ -43,5 +44,30 @@
     background-color: #a7a5a5;
 }
 
+.sidebar .hover-links {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 1;  /* Ensure hover-links are on top */
+}
 
+.sidebar li:hover .hover-links {
+    display: block;
+}
 
+.sidebar .hover-links li {
+    padding: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sidebar .hover-links li:hover {
+    background-color: #f0f0f0;
+}
