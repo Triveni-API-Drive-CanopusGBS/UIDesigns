@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     width: auto;
-    background-color: #faf7f7;
+    background-color: #f9f9f9;
     margin: 10px 10px 0 10px;
     border-radius: 8px;
 
@@ -32,7 +32,7 @@
     padding:10px 10px;
     cursor: pointer;
     border-radius: 8px;
-    background-color: #e3e3e3;
+    background-color: #efeeee;
 }
 .submenu ul li.active{
     padding:10px 10px;
