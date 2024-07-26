@@ -28,7 +28,7 @@ function Sidebar({ onSelect }) {
 
     return (
         <aside className="sidebar">
-            <ul>
+          <ul>
                 {sidebarItems.map((item, index) => (
                     <li 
                         key={index} 
@@ -37,11 +37,9 @@ function Sidebar({ onSelect }) {
                     >
                         {item}
                         {index === 2 && (
-                            <ul 
-                            key={index} 
-                            className={activeIndex === index ? 'active hover-links' : ''} >
-                                <li onClick={() => handleClick(index, item)}>Electrical</li>
-                                <li onClick={() => handleClick(index, item)}>Mechanical</li>
+                            <ul className={`hover-links ${activeIndex === index ? 'active' : ''}`}>
+                                <li onClick={() => handleClick(index, 'Electrical')}>Electrical</li>
+                                <li onClick={() => handleClick(index, 'Mechanical')}>Mechanical</li>
                             </ul>
                         )}
                     </li>

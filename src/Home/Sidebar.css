@@ -33,6 +33,7 @@
 
 .sidebar ul li:hover {
     background-color: #e3e3e3;
+    
 }
 
 .sidebar ul li.active, .sidebar ol li.active {
@@ -58,16 +59,22 @@
     z-index: 1;  /* Ensure hover-links are on top */
 }
 
-.sidebar li:hover .hover-links {
+.sidebar ul li:hover .hover-links, .sidebar ul li.active .hover-links {
     display: block;
 }
 
 .sidebar .hover-links li {
     padding: 10px;
     cursor: pointer;
+    color:black;
     white-space: nowrap;
 }
 
 .sidebar .hover-links li:hover {
     background-color: #f0f0f0;
+}
+
+.sidebar .hover-links li:active{
+    background-color: #fff !important;
+    color: orange;
 }
