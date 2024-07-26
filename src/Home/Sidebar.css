@@ -36,7 +36,7 @@
 
 .sidebar ul li.active,.sidebar ol li.active {
     background-color: #fff !important;
-    color: blue;
+    color: orange;
 }
 
 .sidebar ol li.active {

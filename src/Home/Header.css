@@ -76,7 +76,7 @@ nav {
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  /* right: 0; */
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -84,7 +84,8 @@ nav {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 200px;
+  width:auto;
+  /* width: 200px; */
 }
 
 /* Show dropdown menu on hover */
