@@ -32,6 +32,7 @@
   height: 100%;
   margin: 0; /* Remove margin */
   padding: 0; /* Remove padding */
+  border: 1px solid orange;
 }
 
 .logo h1 {
