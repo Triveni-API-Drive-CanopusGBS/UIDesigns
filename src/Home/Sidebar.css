@@ -34,8 +34,9 @@
     background-color:#e3e3e3;
 }
 
-.sidebar ul li.active {
-    background-color: #a7a5a5 !important;
+.sidebar ul li.active,.sidebar ol li.active {
+    background-color: #fff !important;
+    color: blue;
 }
 
 .sidebar ol li.active {
