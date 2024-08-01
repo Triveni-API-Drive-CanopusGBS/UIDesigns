@@ -1,34 +1,41 @@
-// src/App.js
-import React, { useState } from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './HomeComponent/Header';
-import Footer from './HomeComponent/Footer';
-import Sidebar from './HomeComponent/Sidebar';
-import SubMenu from './HomeComponent/SubMenu';
-import MainContent from './HomeComponent/MainContent';
-import CostSheet from './HomeComponent/CostSheet';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
+import Header from "./Home/Header";
+import AddUser from "./UserManagement/AddUser";
+import EditUser from "./UserManagement/EditUser";
+import AllUsersInfo from "./UserManagement/AllUsersInfo";
+import ProfileData from "./UserManagement/ProfileData";
+import Footer from "./Home/Footer";
+import Home from "./Home/Home";
+import NotFound from "./Home/NotFound";
+import CreateQuote from "./CreateQuote";
 
-function App() {
-    const [selectedSidebarItem, setSelectedSidebarItem] = useState('Customer Details');
-    const [selectedSubMenuItem, setSelectedSubMenuItem] = useState('');
+const App = () => {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <div >
 
-    return (
-        <div className="App">
-            <Header />
-            <div className="container">
-                <Sidebar onSelect={setSelectedSidebarItem} />
-                <div className="main-section">
-                    <SubMenu sidebarItem={selectedSidebarItem} onSelect={setSelectedSubMenuItem} />
-                   <div className="box">
-                      <MainContent subMenuItem={selectedSubMenuItem} />
-                      <CostSheet />
-                   </div>
-                </div>
-            </div>
-            <Footer />
+          <div className="main-content container-fluid">
+              <Routes>
+                <Route exact path="/" Component={Home} />
+                <Route path="/profile" Component={ProfileData} />
+                <Route path="/adduser" element={<AddUser />} />
+                <Route path="/edituser/:id" element={<EditUser />} />
+                <Route path="/users" element={<AllUsersInfo />} />
+                <Route path="/create-quotation" element={<CreateQuote />} />
+                {/* <Route path="/edit-quotations" element={<CreateQuote />} /> */}
+                <Route path="*" Component={NotFound} />
+              </Routes>
+          </div>
         </div>
-    );
-}
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
 export default App;

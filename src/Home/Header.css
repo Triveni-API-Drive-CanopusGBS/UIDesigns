@@ -1,0 +1,107 @@
+/* src/components/Header.css */
+
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header container styling */
+.header {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 20px; */
+  border-radius: 8px 8px 0 0;
+  /* height: 65px; Set a fixed height for the header */
+}
+
+.header .logo h1{
+  margin-bottom: 0;
+}
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  /* height: 100%; */
+  height: 50px;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  border: 1px solid orange;
+}
+
+.logo h1 {
+  font-size: 14px;
+  margin-left: 20px; /* Add margin to the left of the title */
+  white-space: nowrap; /* Prevent line breaks in the title */
+}
+
+/* Navigation container styling */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation link styling */
+.nav-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+/* Dropdown container styling */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown button styling */
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  /* right: 0; */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width:auto;
+  /* width: 200px; */
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(148, 97, 1, 0.1);
+}

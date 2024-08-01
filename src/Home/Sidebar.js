@@ -1,4 +1,3 @@
-// src/components/Sidebar.js
 import React, { useState } from 'react';
 import './Sidebar.css';
 
@@ -29,7 +28,7 @@ function Sidebar({ onSelect }) {
 
     return (
         <aside className="sidebar">
-            <ul>
+          <ul>
                 {sidebarItems.map((item, index) => (
                     <li 
                         key={index} 
@@ -37,6 +36,12 @@ function Sidebar({ onSelect }) {
                         onClick={() => handleClick(index, item)}
                     >
                         {item}
+                        {index === 2 && (
+                            <ul className={`hover-links ${activeIndex === index ? 'active' : ''}`}>
+                                <li onClick={() => handleClick(index, 'Electrical')}>Electrical</li>
+                                <li onClick={() => handleClick(index, 'Mechanical')}>Mechanical</li>
+                            </ul>
+                        )}
                     </li>
                 ))}
             </ul>

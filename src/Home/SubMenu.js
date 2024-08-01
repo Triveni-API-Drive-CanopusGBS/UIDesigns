@@ -41,7 +41,9 @@ function getSubMenuItems(sidebarItem) {
     const subMenuData = {
         'Customer Details': ['Personal Info', 'Contact Info', 'Address'],
         'Technical Inputs': ['Input Specs', 'Load Data'],
-        '1. Technical Specifications': ['SubMenu1', 'SubMenu2', 'SubMenu3'],
+        // '1. Technical Specifications': ['SubMenu1', 'SubMenu2', 'SubMenu3'],
+        'Electrical': ['SubMenu1', 'SubMenu2', 'SubMenu3'],
+        'Mechanical': ['SubMenu1', 'SubMenu2', 'SubMenu3'],
         '2. Perf Params': ['SubMenu1', 'SubMenu2', 'SubMenu3'],
         '3. Utilities': ['SubMenu1', 'SubMenu2', 'SubMenu3'],
         '4. Broad Scope': ['SubMenu1', 'SubMenu2', 'SubMenu3'],

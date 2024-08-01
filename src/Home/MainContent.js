@@ -1,9 +1,8 @@
 import React from 'react';
 import './MainContent.css';
-import SubMenu1 from '../Technical Specifications/SubMenu1';
-import SubMenu2 from '../Technical Specifications/SubMenu2';
-import SubMenu3 from '../Technical Specifications/SubMenu3';
-// Import other components here...
+import SubMenu1 from '../New-Draft-Folder/Technical Specifications/SubMenu1';
+import SubMenu2 from '../New-Draft-Folder/Technical Specifications/SubMenu2';
+import SubMenu3 from '../New-Draft-Folder/Technical Specifications/SubMenu3';
 
 const componentMapping = {
     'SubMenu1': SubMenu1,
