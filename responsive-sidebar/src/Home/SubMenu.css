@@ -1,0 +1,46 @@
+/* src/components/SubMenu.css */
+.submenu ul,
+.submenu ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.submenu {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: #f9f9f9;
+    margin: 10px 10px 0 10px;
+    border-radius: 8px;
+
+}
+
+.submenu ul {
+    display:inline;
+    display:flex;
+    font-size: 10px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.submenu ul li { 
+    padding:10px 10px;
+    cursor: pointer;
+}
+
+.submenu ul li:hover { 
+    padding:10px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #efeeee;
+}
+.submenu ul li.active{
+    padding:10px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #fff;
+    color: orange;
+}
+
+
+

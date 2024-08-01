@@ -1,0 +1,26 @@
+/* src/components/CostSheet.css */
+*{
+    font-size: 10px;
+}
+.cost-sheet {
+    width: auto;
+    margin-top: 50px !important;
+    font-size: 10px !important;
+    background-color: #fff;
+    /* border: 1px solid #ccc;/ */
+    padding: 5px;
+    margin: 10px 10px 10px 0 ;
+    max-width: 400px;
+    font-family: sans-serif;
+    /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.cost-sheet .section {
+    margin-bottom: 20px;
+}
+
+.cost-sheet .section h3 {
+    margin-top: 0;
+}

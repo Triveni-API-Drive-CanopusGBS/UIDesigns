@@ -1,0 +1,15 @@
+/* src/components/MainContent.css */
+.main-content {
+    display: block;
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 10px 10px 10px;
+    transition: border-radius 0.3s;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width:auto;
+    /* height: 500px; */
+}
+
